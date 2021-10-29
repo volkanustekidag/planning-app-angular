@@ -10,9 +10,9 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
 
   recipes: Recipe[] = [
-    new Recipe("A Test Recipe","This is basic a test","https://im.haberturk.com/2020/09/30/ver1601442026/2819427_810x458.jpg"),
-    new Recipe("A Test Recipe","This is basic a test","https://im.haberturk.com/2020/09/30/ver1601442026/2819427_810x458.jpg"),
-    new Recipe("A Test Recipe","This is basic a test","https://im.haberturk.com/2020/09/30/ver1601442026/2819427_810x458.jpg"),
+    new Recipe("Kebap","","https://im.haberturk.com/2020/09/30/ver1601442026/2819427_810x458.jpg"),
+    new Recipe("Mantı","","https://im.haberturk.com/2020/11/28/ver1606574471/2885324_810x458.jpg"),
+    new Recipe("Baklava","","https://cdn.yemek.com/mncrop/940/625/uploads/2017/06/fistikli-baklava-yemekcom1.jpg"),
 
   ];
 

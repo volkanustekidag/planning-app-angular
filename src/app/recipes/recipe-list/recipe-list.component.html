@@ -1,13 +1,5 @@
+<h2>Recipe List</h2>
 
-
-<div class="row">
-    <div class="col-xs-12">
-        <button class="btn btn-succes">
-
-        </button>
-    </div>
-</div>
-<hr>
 <div class="row">
     <div class="col-xs-12">
         <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipes">
@@ -19,10 +11,11 @@
                 <img 
                 [src]="recipe.imagePath"
                 alt="{{recipe.name}}" class="img-responsive" style="max-height: 50px;">
-           
             </span>
         </a>
+        <hr>
         <app-recipe-item></app-recipe-item>
+        <hr>
     </div>
 </div>
 
