@@ -1,29 +1,22 @@
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <div class="navbar-header">
             <a href="#" class="navbar-brand">Recipe Book</a>
         </div>
-        <div class="collapse navbar-collapse" >
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li><a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a></li>
-                <li><a class="nav-link" href="#"(click)="onSelect('shopping-list')">Shopping List</a></li>
-            </ul> 
+                <li routerLinkActive="active"><a class="navbar-brand" routerLink="/recipes">Recipes</a></li>
+                <li routerLinkActive="active"><a class="navbar-brand" routerLink="/shopping-list">Shopping List</a></li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown" appDropdown>
-                    <a href="#" class="nav-link dropdown-toggle" > Manage </a>
+                    <a style="cursor: pointer;" class="nav-link dropdown-toggle"> Manage </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Save Data</a></li>
-                        <li><a class="dropdown-item" href="#">Fetch Data</a></li>
+                        <li><a class="dropdown-item" style="cursor: pointer;">Save Data</a></li>
+                        <li><a class="dropdown-item" style="cursor: pointer;">Fetch Data</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
