@@ -5,11 +5,15 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li routerLinkActive="active"><a class="navbar-brand" routerLink="/recipes">Recipes</a></li>
+                <li routerLinkActive="active"><a class="navbar-brand" routerLink="/recipes" *ngIf="isAuthent">Recipes</a></li>
                 <li routerLinkActive="active"><a class="navbar-brand" routerLink="/shopping-list">Shopping List</a></li>
+                <li routerLinkActive="active"><a class="navbar-brand" routerLink="/auth" *ngIf="!isAuthent">Authenticate</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown" appDropdown>
+                <li *ngIf="isAuthent">
+                    <a style="cursor: pointer;" (click)="onLogout()" >Logout</a>
+                </li>
+                <li class="dropdown" appDropdown >
                     <a style="cursor: pointer;" class="nav-link dropdown-toggle"> Manage </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" style="cursor: pointer;" (click)="onSaveData()">Save Data</a></li>
