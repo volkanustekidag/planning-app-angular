@@ -15,12 +15,12 @@ const appRoutes: Routes = [
         path: 'recipes', component: RecipesComponent, canActivate: [AuthGuard], children: [
             { path: '', component: RecipeStartComponent },
             { path: 'new', component: RecipeEditComponent },
-            { path: ':id', component: RecipeDetailComponent, resolve:[RecipesResolverService] },
-            { path: ':id/edit', component: RecipeEditComponent, resolve: [RecipesResolverService]}
+            { path: ':id', component: RecipeDetailComponent, resolve: [RecipesResolverService] },
+            { path: ':id/edit', component: RecipeEditComponent, resolve: [RecipesResolverService] }
         ]
     },
     { path: 'shopping-list', component: ShoppingListComponent },
-    { path: 'auth', component: AuthComponent}
+    { path: 'auth', component: AuthComponent }
 ];
 
 @NgModule({
